@@ -15,13 +15,11 @@ class Game
 
         puts "What's the name of player 1 ? You will play with the symbol X "
         name = gets.chomp
-        player1 = Player.new(name)
-j
+        player1 = Player.new(name, 'X')
         puts "What's the name of player 2 ? You will play with the symbol O "
         name = gets.chomp
-        player2 = Player.new(name)
+        player2 = Player.new(name, 'O')
     end
-
 
 
 
@@ -30,9 +28,10 @@ j
 
 
     def turn
-
-    firstshow = show.new
-    puts "What do you want to play ? " #ask the player what he choose to play
+        array = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+        firstshow = Show.new
+        firstshow.show(array)
+        puts "What do you want to play ? " #ask the player what he choose to play
     end
 
 

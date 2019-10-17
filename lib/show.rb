@@ -1,14 +1,13 @@
-class Show(array)
-
+class Show
 
 	#_INITIALIZE___________________________________________________________________
 
-        puts line_A =  (” A | ” + (array[0]).value + ” |“) + (“| ” + (array[1]).value + ” |“) + (“| ” + (array[2]).value + ” |“)
-        puts  = (” ”*4) + (“- ”*7)
-        puts line_B = (” B | ” + (array[3]).value + ” |“) + (“| ” + (array[4]).value + ” |“) + (“| ” + (array[5]).value + ” |“)
-        puts (” ”*4) + (“- ”*7)
-        puts line_C = (” C | ” + (array[6]).value + ” |“) + (“| ” + (array[7]).value + ” |“) + (“| ” + (array[8]).value + ” |“)
-        puts (” ”*4) + (“- ”*7)
-
-
+	def show(array)
+		puts ("-"*2) + "A" + ("-"*1) + "B" +  ("-"*1) + "C"
+		puts "1" + "|" + array[0] + "|" + array[1] + "|" + array[2] + "|"
+		puts ("-"*7)
+		puts "2" + "|" + array[3] + "|" + array[4] + "|" + array[5] + "|"
+		puts ("-"*7)
+		puts "3" + "|" + array[6] + "|" + array[7] + "|" + array[8] + "|"
+	end
 end

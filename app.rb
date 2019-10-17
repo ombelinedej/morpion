@@ -49,11 +49,8 @@ require_relative 'lib/board_case'
 #_________________________________END OF LOOP
 
 
-
-
-
-
 #__________END________________
 
-Application.new.perform
+myapp = Application.new
+myapp.perform
 
